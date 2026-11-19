@@ -1,0 +1,28 @@
+{
+  "name": "vn-zombie-extraction",
+  "version": "0.1.0",
+  "description": "Playable VN zombie extraction prototype",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.web.json && vite build",
+    "preview": "vite preview",
+    "demo": "tsc -p tsconfig.json && node dist/demo/bootstrapWorld.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.web.json --noEmit"
+  },
+  "keywords": [
+    "game",
+    "prototype",
+    "extraction",
+    "zombie"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
